@@ -1,0 +1,10 @@
+<workunit extends="wtemplates/ListController.xml" serviceName="BUKPermitteeCRUDService" 
+          entityName="permittee" formName="permittee:list">
+    
+    <invokers>
+        <invoker folderid="/home/paymentorder" caption="Permittees" role="SPOPERMITTEELIST"> </invoker>
+        <invoker type="quick_launcher" code="PE1" caption="Permittees" role="SPOPERMITTEELIST"> </invoker>
+        
+    </invokers>
+    
+</workunit>

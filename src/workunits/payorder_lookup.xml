@@ -1,0 +1,9 @@
+<workunit extends="wtemplates/ServiceLookupController.xml" serviceName="BUKPayOrderLookupListService">
+    
+    <invokers>
+        
+        <invoker type="payorder:lookup" caption="Pay Order Lookup" target="popup" > </invoker>
+        
+    </invokers>
+    
+</workunit>

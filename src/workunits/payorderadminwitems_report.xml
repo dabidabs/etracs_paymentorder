@@ -1,0 +1,15 @@
+<workunit>
+    <invokers>
+      <!--  <invoker folderid="/explorer/training/personnel" action="create" caption="Personnel" target="popup" > </invoker>
+        <invoker folderid="/home/training/personnel" action="create" caption="Personnel" target="popup" 
+        > </invoker>  -->
+        <invoker type="payorder:formActions" action="preview" caption="SG"> </invoker>
+        <invoker type="formActions" action="_close" caption="Close" mnemonic="c"> </invoker>
+        
+           
+    </invokers>
+    <code class="etracs.training.plugin.report.PayOrderReportAdmin"/>
+    <pages>
+        <page name="report" template="com.rameses.osiris2.common.ui.ReportPreviewPage" />
+    </pages>
+</workunit>

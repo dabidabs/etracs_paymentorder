@@ -1,0 +1,12 @@
+"entity.*|selectedPayorderitem"[mode == 'read']{
+    enabled:false;
+}
+
+"entity.*|selectedPayorderitem"[mode != 'read']{
+    enabled:true;
+}
+
+"entity.objid"[mode == 'edit']{
+    enabled:false;
+}
+

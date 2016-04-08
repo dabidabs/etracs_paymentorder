@@ -1,0 +1,10 @@
+<workunit extends="wtemplates/ReportController.xml">
+    <invokers>
+      <!--  <invoker folderid="/explorer/training/personnel" action="create" caption="Personnel" target="popup" > </invoker>
+        <invoker folderid="/home/training/personnel" action="create" caption="Personnel" target="popup" > </invoker> -->
+        <invoker folderid="/home/paymentorder" caption="Permittee Listing" role="SPOPERMITTEELIST"> </invoker>
+        <invoker type="permittee:list:formActions" caption="Permittee Report" role="SPOPERMITTEELIST"/>
+           
+    </invokers>
+    <code class="etracs.training.plugin.report.PermitteeReportListingController"/>
+</workunit>

@@ -1,0 +1,11 @@
+<workunit extends="wtemplates/ReportController.xml">
+    <invokers>
+      <!--  <invoker folderid="/explorer/training/personnel" action="create" caption="Personnel" target="popup" > </invoker>
+        <invoker folderid="/home/training/personnel" action="create" caption="Personnel" target="popup" > </invoker> -->
+        <invoker folderid="/home/paymentorder" caption="Payment Order Listing" role="SPOLISTREPORT"> </invoker>
+        <invoker folderid="/explorer/paymentorder" caption="Payment Order Listing" role="SPOLISTREPORT"> </invoker>
+        <invoker type="payorder:list:formActions" caption="Listing Report" role="SPOLISTREPORT"/>
+           
+    </invokers>
+    <code class="etracs.training.plugin.report.PayOrderReportListingController"/>
+</workunit>

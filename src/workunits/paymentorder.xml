@@ -1,0 +1,13 @@
+<workunit>
+    <invokers>
+      <!--  <invoker folderid="/explorer/training/personnel" action="create" caption="Personnel" target="popup" > </invoker>
+        <invoker folderid="/home/training/personnel" action="create" caption="Personnel" target="popup" > </invoker> -->
+        <invoker folderid="home/paymentorder" action="create" caption="Payment Order" role="SPONEW" > </invoker>
+        <invoker type="payorder:open" action="open" caption="Payment Order" role="SPONEW"> </invoker>
+                
+    </invokers>
+    <code class="etracs.training.plugin.PayOrderController"/>
+    <pages>
+        <page name="default" template="etracs.training.plugin.PayOrderPage" />
+    </pages>
+</workunit>

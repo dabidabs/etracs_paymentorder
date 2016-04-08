@@ -1,0 +1,34 @@
+<workunit>
+    
+    <invokers>
+        <invoker type="quick_launcher" code="PL02" caption="Payment Order Lookup" target="popup" > </invoker>        
+    </invokers>
+    <code>
+        import com.rameses.rcp.common.*;
+        import com.rameses.rcp.annotations.*;
+        import com.rameses.osiris2.common.*;
+        import com.rameses.osiris2.client.*;
+        
+        class TestLookup
+        {
+            def payorder;
+        
+            def getLookupPayorder(){
+                return Inv.lookupOpener('payorder:lookup', 
+                    [
+                        onselect: {
+                            return Inv.lookupOpener('payorder:open', [entity:selectedPayorderitem]);
+                                  },
+                         onempty: {
+                            //
+                            }
+                    ]
+                )
+            }
+        }       
+    </code>
+    <!--<pages>
+    //    <page template="etracs.training.plugin.PayOrderLookupPage" />
+    </pages>  -->
+    
+</workunit>

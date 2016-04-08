@@ -1,0 +1,17 @@
+<workunit>
+    
+    <invokers>
+        
+       <invoker folderid="/home/paymentorder" caption="Payment Order Admin List" role="SPOADMIN"> </invoker>
+        
+        <invoker type="formActions" action="_close" caption="Close" mnemonic="c" role="SPOADMIN"/>       
+       <!-- <invoker type="formActions" action="open" caption="Open" mnemonic="o" 
+                    visibleWhen="#{selectedSGAdminPayorderitem != null}" />     --> 
+        
+    </invokers>
+    <code class="etracs.training.plugin.PaymentOrderSGAdminListController"/>
+    
+    <pages>
+        <page template="etracs.training.plugin.PaymentOrderSGAdminList"/>
+    </pages>  
+</workunit>

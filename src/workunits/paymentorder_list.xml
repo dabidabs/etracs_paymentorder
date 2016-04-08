@@ -1,0 +1,12 @@
+<workunit extends="wtemplates/ListController.xml" serviceName="BUKPayOrderService" 
+          entityName="payorder" formName="payorder:list" allowCreate="false">
+    
+    <invokers>
+        
+       
+        <invoker folderid="/home/paymentorder" caption="Payment Order List" role="SPOLIST"> </invoker>
+        <invoker type="quick_launcher" code="PL01" caption="Payment Order List" role="SPOLIST"> </invoker>
+        
+    </invokers>
+    
+</workunit>

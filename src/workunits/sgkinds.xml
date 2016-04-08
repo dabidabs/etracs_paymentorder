@@ -1,0 +1,25 @@
+<workunit>
+    <invokers>
+      <!--  <invoker folderid="/explorer/training/personnel" action="create" caption="Personnel" target="popup" > </invoker>
+        <invoker folderid="/home/training/personnel" action="create" caption="Personnel" target="popup" > </invoker> -->
+        <invoker folderid="home/paymentorder" action="create" caption="SG Kinds" role="SPOSGMASTER"> </invoker>
+            <!-- <invoker type="personnel:open" action="open" caption="SG Kinds new"> </invoker>       
+        <invoker type="personnel:create" action="create" caption="SG Kinds new" > </invoker>
+        <invoker type="personnel:cancel" action="cancel" caption="SG Kinds new" > </invoker>-->
+        
+        <!--<invoker type="formActions" action="cancel" caption="Cancel" mnemonic = "C" shortcut = "ctrl C" 
+                 visibleWhen = "#{mode == 'edit'}"> </invoker>
+        <invoker type="formActions" action="create" caption="New" mnemonic = "N" shortcut = "ctrl N" 
+                    visibleWhen = "#{mode =='read'}"></invoker>
+         <invoker type="formActions" action="edit" caption="Edit" mnemonic = "E" shortcut = "ctrl E" 
+                    visibleWhen = "#{mode =='read'}"> </invoker>
+        <invoker type="formActions" action="save" caption="Save" mnemonic = "S" shortcut = "ctrl S"
+                  visibleWhen = "#{mode !='read'}"> </invoker>
+        <invoker type="formActions" action="_close" caption="Close" mnemonic="c" visibleWhen = "#{mode =='read'}" /> -->
+                          
+    </invokers>
+    <code class="etracs.training.plugin.SGKindPageController"/>
+    <pages>
+        <page name="default" template="etracs.training.plugin.SGKindPage" />
+    </pages>
+</workunit>

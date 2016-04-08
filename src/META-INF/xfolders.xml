@@ -1,0 +1,16 @@
+<folders>
+    <!-- <folder id="explorer">
+        <folder id="Transactions" caption="Payment Order" index="100">
+            <folder id="Treasury" caption="Payment Order"></folder>
+                <folder id="paymentorder" caption="Payment Order"></folder>        
+         </folder> 
+    </folder> -->
+    
+    
+    <folder id="home">
+        <folder id="paymentorder" caption="Payment Order" index="100">            
+         </folder>
+ </folder>
+</folders>
+
+

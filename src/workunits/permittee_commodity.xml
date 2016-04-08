@@ -1,0 +1,16 @@
+<workunit>
+    <invokers>
+      <!--  <invoker folderid="/explorer/training/personnel" action="create" caption="Personnel" target="popup" > </invoker>
+        <invoker folderid="/home/training/personnel" action="create" caption="Personnel" target="popup" > </invoker> -->
+        
+        <invoker type="commodity:create" action="create" caption="commodity New" target="popup" > </invoker>
+        <invoker type="commodity:edit" action="edit" caption="commodity Edit" target="popup" > </invoker>
+        <invoker type="formActions" action="_close" caption="Cancel" mnemonic="c" > </invoker>
+        <invoker type="formActions" action="add" caption="Add" mnemonic="a" visibleWhen="#{mode=='create'}" > </invoker>
+        <invoker type="formActions" action="update" caption="Update" mnemonic="u" visibleWhen="#{mode=='edit'}" > </invoker>       
+    </invokers>
+    <code class="etracs.training.plugin.PermitteeCommodityController"/>
+    <pages>
+        <page name="default" template="etracs.training.plugin.PermitteeCommodityPage" />
+    </pages>
+</workunit>

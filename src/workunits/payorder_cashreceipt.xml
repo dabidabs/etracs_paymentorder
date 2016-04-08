@@ -1,0 +1,23 @@
+<workunit extends="wtemplates/gov/treasury/BasicCashReceiptController.xml">
+    
+    <invokers>
+         
+           
+        
+        <invoker type="collectiontype:handler" 
+                 caption="Payment Order" 
+                 name="payorder"
+                 index="110"></invoker>
+        <invoker type="cashreceipt:payorder" 
+                 action="init"></invoker>
+        
+    </invokers>
+    
+    <code class="etracs.training.plugin.PayorderReceiptController"/>
+    
+    <pages>
+        <page template="etracs.training.plugin.PayOrderCashReceiptPage"/>
+    </pages>
+    
+    
+</workunit>

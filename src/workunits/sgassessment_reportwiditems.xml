@@ -1,0 +1,13 @@
+<workunit>
+    <invokers>
+      <!--  <invoker folderid="/explorer/training/personnel" action="create" caption="Personnel" target="popup" > </invoker>
+        <invoker folderid="/home/training/personnel" action="create" caption="Personnel" target="popup" > </invoker> 
+         <invoker type="sgassessment:formActions" action="preview" caption="Test" > </invoker> -->
+        <invoker type="churvaness:report" action ="initPreview"> </invoker>
+           
+    </invokers>
+    <code class="etracs.training.plugin.report.SGAssessmentReportAdminWidItemsController"/>
+    <pages>
+        <page name="preview" template="com.rameses.osiris2.common.ui.ReportPreviewPage"/>
+    </pages>
+</workunit>

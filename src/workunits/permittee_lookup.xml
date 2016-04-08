@@ -1,0 +1,6 @@
+<workunit extends="wtemplates/ServiceLookupController.xml" 
+    serviceName="PermitteeLookupService">
+   <invokers>
+         <invoker type="permittee:lookup" caption="Lookup Permittee" target="popup"/>
+   </invokers>
+</workunit>

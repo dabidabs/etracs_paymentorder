@@ -1,0 +1,18 @@
+<workunit>
+    <invokers>
+      <!--  <invoker folderid="/explorer/training/personnel" action="create" caption="Personnel" target="popup" > </invoker>
+        <invoker folderid="/home/training/personnel" action="create" caption="Personnel" target="popup" > </invoker> -->
+        <invoker folderid="/home/paymentorder" action="create" caption="Permittee" role="SPOPERMITTEE"> </invoker>
+        
+        <invoker type="permittee:create" action="create" caption="Permittee" role="SPOPERMITTEE"> </invoker>
+        <invoker type="permittee:open" action="open" caption="Permittee" role="SPOPERMITTEE"> </invoker>
+        <invoker type="permittee:cancel" action="cancel" caption="Permittee (New)" role="SPOPERMITTEE"> </invoker>
+       <!--  <invoker type="permittee:edit" action="edit" caption="Permittee (New)" role="SPOPERMITTEE"> </invoker>  -->
+       
+                  
+    </invokers>
+    <code class="etracs.training.plugin.PermitteeController"/>
+    <pages>
+        <page name="default" template="etracs.training.plugin.PermitteePage" />
+    </pages>
+</workunit>

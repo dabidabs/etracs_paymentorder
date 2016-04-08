@@ -1,0 +1,23 @@
+<workunit >
+    <invokers>
+      <!--  <invoker folderid="/explorer/training/personnel" action="create" caption="Personnel" target="popup" > </invoker>
+        <invoker folderid="/home/training/personnel" action="create" caption="Personnel" target="popup" > </invoker> 
+        <invoker type="formActions" action="cancel" caption="Cancel" mnemonic = "C" shortcut = "ctrl C" 
+                 visibleWhen = "#{mode == 'init'}"> </invoker>-->
+        <invoker folderid="home/paymentorder" action="init" 
+                 caption="SG Assessment" role="SPOSGASSESSOR"> </invoker>
+        <invoker type="formActions" action="_close" caption="Close" mnemonic="c" 
+                 visibleWhen = "#{mode =='read'}" role="SPOSGASSESSOR"/> 
+        <invoker type="formActions" action="assess" caption="Assess" mnemonic = "A" 
+                 shortcut = "ctrl A" role="SPOSGASSESSOR"> </invoker>      
+        <invoker type="formActions" action="save" caption="Save" mnemonic = "S" shortcut = "ctrl S" 
+                    visibleWhen = "#{mode =='assess'}" role="SPOSGASSESSOR"></invoker>
+       
+                               
+    </invokers>
+    <code class="etracs.training.plugin.SGAssessmentController"/>
+    <pages>
+        <page name="default" template="etracs.training.plugin.SGAssessmentPage" />
+        <page name="preview" template="com.rameses.osiris2.common.ui.ReportPreviewPage"/>
+    </pages>
+</workunit>
